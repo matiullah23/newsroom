@@ -17,20 +17,12 @@ function makeResponsive() {
     svgArea.remove();
   }
 
-  // SVG wrapper dimensions are determined by the current width and
-  // height of the browser window.
-  // var svgWidth = 960;
-  // var svgHeight = 500;
+  // SVG wrapper dimensions are determined by the current width and height of the browser window.
 
   var svgWidth = window.innerWidth;
   var svgHeight = window.innerHeight;
 
-  // var margin = {
-  //   top: 20,
-  //   right: 100,
-  //   bottom: 50,
-  //   left: 100
-  // };
+  // set margins
   margin = {
     top: 20,
     bottom: 100,
@@ -38,6 +30,7 @@ function makeResponsive() {
     left: 100
   };
 
+  // set height and width
   var height = svgHeight - margin.top - margin.bottom;
   var width = svgWidth - margin.left - margin.right;
 
@@ -82,6 +75,7 @@ function makeResponsive() {
         chartGroup.append("g")
           .call(yAxis);
 
+        // create circles
         var circlesGroup = chartGroup.selectAll("circle")
         .data(dataSet)
         .enter()
@@ -93,7 +87,7 @@ function makeResponsive() {
         .attr("stroke", "black")
         .style("fill", "white");
 
-
+        // append text
         circlesGroup.append("text")
         .text(d => d.state)
         .attr("x", d => xObesityScale(d.obesity))
