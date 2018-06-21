@@ -1,0 +1,54 @@
+body {
+  background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/redox-02.png");
+}
+
+.jumbotron {
+  margin: auto;
+width:75%;
+text-align: center;
+border-color: black;
+margin-bottom: 25px;
+border-style: ridge;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color : #737373;
+
+}
+
+.jheader {
+  font-size: 60px;
+}
+
+.jp {
+  font-size: 30px;
+}
+
+.frame {
+  margin: auto;
+width: 50%;
+border: 3px solid gray;
+padding: 25px;
+}
+
+
+.analysis {
+  margin: auto;
+  width: 66%;
+  padding: 30px;
+  font: "Times New Roman";
+  color : #737373;
+}
+
+.hanalysis {
+  font-family: 'Enriqueta', arial, serif;
+  line-height: 1.25; margin: 0 0 10px;
+  font-size: 55px;
+  font-weight: bold;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.hp {
+  font-size: 25px;
+}
